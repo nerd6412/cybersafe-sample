@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Bank Details</h2>
+            <form id="bankDetailsForm">
+                <input type="text" placeholder="Bank Account Number" required>
+                <input type="text" placeholder="Bank Routing Number" required>
+                <input type="text" placeholder="Bank Name" required>
+                <input type="text" placeholder="Account Holder Name" required>
+                <input type="text" placeholder="Bank Address" required>
+                <div class="button-group">
+                    <button type="button" onclick="redirectToCompromised()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function redirectToCompromised() {
+            window.location.href = 'compromised.html';
+        }
+    </script>
+</body>
+</html>
